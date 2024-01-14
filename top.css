@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin-top: 2px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.section h2 {
+  font-size: 24px;
+  color: var(--text-dark);
+  margin: 20px 0;
+}
+
+.section p {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin: 10px 0;
+}
+
+.section ul, .section ol {
+  margin-left: 20px;
+}
+
+
+.section ul li, .section ol li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.section a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#quiz-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#question-container {
+  margin: 20px 0;
+}
+
+#choices-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  margin: 10px 0;
+}
+
+#result-container {
+  margin-top: 20px;
+  color: #333;
+}
+
+#timer-container {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#choices-container {
+  min-height: 120px; /* Set a fixed minimum height for the choices container */
+}
+
+.choice {
+  margin-bottom: 10px; /* Add some bottom margin between choices for better spacing */
+}
+
+/* Additional styles for better layout */
+#quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add this if you want to center the choices horizontally */
+.choice {
+  display: flex;
+  align-items: center;
+}
