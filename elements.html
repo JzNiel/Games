@@ -212,17 +212,13 @@
         let gameStarted = false;
 
         function startGame() {
-            showQuestion();
-            startTimer();
-        }
-
-        function startGame() {
-        document.getElementById("start-btn").style.display = "none";
+            document.getElementById("start-btn").style.display = "none";
         document.getElementById("submit-btn").style.display = "block";
         gameStarted = true;
         startTimer();
-        startQuestion();
-            }
+            showQuestion();
+            startTimer();
+        }
 
         function showQuestion() {
             const questionElement = document.getElementById("question");
