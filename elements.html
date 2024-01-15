@@ -83,7 +83,7 @@
 <div id="quiz-container">
     <div id="question">What is the symbol for:</div>
     <div id="options"></div>
-    <button class="button" id="start-button" onclick="startGame()">Start</button>
+    <button class="button" id="start-btn" onclick="startGame()">Start Game</button>
     <div id="result"></div>
     <br>
     <div id="timer">Time remaining: 10:00</div>
@@ -209,11 +209,20 @@
     let currentQuestionIndex = 0;
         let score = 0;
         let timeRemaining = 600 // 60 seconds
+        let gameStarted = false;
 
         function startGame() {
             showQuestion();
             startTimer();
         }
+
+        function startGame() {
+        document.getElementById("start-btn").style.display = "none";
+        document.getElementById("submit-btn").style.display = "block";
+        gameStarted = true;
+        startTimer();
+        startQuestion();
+            }
 
         function showQuestion() {
             const questionElement = document.getElementById("question");
